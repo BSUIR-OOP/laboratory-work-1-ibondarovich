@@ -8,14 +8,13 @@ namespace ConsoleApp1
 {
     class FigureList
     {
-        private List<Point> figureList;
+        private List<Point> figureList = new List<Point>(); 
 
-        public FigureList(Point[] fig)
+        public void AddList(Point figure)
         {
-            figureList = new List<Point>();
-            figureList.AddRange(fig);
-         
+            figureList.Add(figure);
         }
+
         public void DrawFigures()
         {
             foreach (var figure in figureList)
@@ -23,8 +22,5 @@ namespace ConsoleApp1
                 figure.ShowFigure();
             }
         }
-
-
-
     }
 }

@@ -8,7 +8,7 @@ namespace ConsoleApp1
 {
     class Ellipse:Point
     {
-        protected double semi_axel1;
+        private double semi_axel1;
         protected double semi_axel2;
 
         public Ellipse(double x, double y, double semi_axel1, double semi_axel2) :base(x,y)

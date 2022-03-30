@@ -14,19 +14,9 @@ namespace ConsoleApp1
         
         public Line(double x, double y, double width, double height):base(x,y)
         {
-            /* X = x + width;
-             Y = y + heigth;*/
             this.width = x + width;
             this.height = y + height;
         }
-        /*public override void SetLocation(double width, double height)
-        {
-            base.SetLocation(x, y);
-            X = x + width;
-            Y = y + height;
-        }*/
-
-
         public override void ShowFigure()
         {
             Console.WriteLine("Отрезок с координатами ({0},{1}) и ({2},{3})",x,y,width,height);

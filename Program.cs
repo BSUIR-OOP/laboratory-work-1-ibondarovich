@@ -15,9 +15,7 @@ namespace ConsoleApp1
             figureList.AddList(new Rectangle(3,4,20,100));
             figureList.AddList(new Triangle(10,20,30,40,50,60));
 
-            Triangle triangle = new Triangle(20,30,67,12,34,56);
-
-            
+    
 
             figureList.DrawFigures();
             

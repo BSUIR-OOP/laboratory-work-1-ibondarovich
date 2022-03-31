@@ -13,13 +13,34 @@ namespace ConsoleApp1
 
         public Ellipse(double x, double y, double semi_axel1, double semi_axel2) :base(x,y)
         {
-            this.semi_axel1 = semi_axel1;
-            this.semi_axel2 = semi_axel2;
+            Semi_axel1 = semi_axel1;
+            Semi_axel2 = semi_axel2;
+        }
+
+        public double Semi_axel1
+        {
+            get{
+                return semi_axel1;
+            }
+
+            set{
+                semi_axel1 = value;
+            }
+        }
+        public double Semi_axel2
+        {
+            get{
+                return semi_axel2;
+            }
+
+            set{
+                semi_axel2 = value;
+            }
         }
 
         public override void ShowFigure()
         {
-            Console.WriteLine("Эллипс с центром в точке ({0};{1} и полуосями {2} и {3})",x,y,semi_axel1,semi_axel2);
+            Console.WriteLine("Эллипс с центром в точке ({0};{1} и полуосями {2} и {3})",X,Y,Semi_axel1,Semi_axel2);
         }
     }
 }

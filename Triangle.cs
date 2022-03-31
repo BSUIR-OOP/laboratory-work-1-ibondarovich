@@ -8,24 +8,20 @@ namespace ConsoleApp1
 {
     class Triangle: Point
     {
-
-        private double x1;
-        private double y1;
-        private double x2;
-        private double y2;
-
-
-        public Triangle(double x0, double y0, double x1, double y1, double x2, double y2):base(x0,y0)
+        private Point point1;
+        private Point point2;
+        private Point point3;
+        
+        public Triangle(double x0, double y0, double x1, double y1, double x2, double y2)
         {
-            this.x1 = x1;
-            this.y1 = y1;
-            this.x2 = x2;
-            this.y2 = y2;
+            point1 = new Point(x0,y0);
+            point2 = new Point(x1,y1);
+            point3 = new Point(x2,y2);
         }
 
         public override void ShowFigure()
         {
-            Console.WriteLine("Треугольник с веришинами в точках ({0};{1}), ({2};{3}) и ({4};{5})",x,y,x1,y1,x2,y2);
+            Console.WriteLine("Треугольник с веришинами в точках ({0};{1}), ({2};{3}) и ({4};{5})",point1.X, point1.Y, point2.X, point2.Y, point3.X, point3.Y);
         }
     }
 }

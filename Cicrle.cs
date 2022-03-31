@@ -15,9 +15,22 @@ namespace ConsoleApp1
             this.radius = radius;
         }
 
+        public double Radius
+        {
+            get
+            {
+                return radius;
+            }
+
+            set
+            {
+                radius = value;
+            }
+        }
+
         public override void ShowFigure()
         {
-            Console.WriteLine("Окружность с центром в точке ({0};{1}) и радиусом {2}",x,y,radius);
+            Console.WriteLine("Окружность с центром в точке ({0};{1}) и радиусом {2}",X,Y,Radius);
         }
     }
 }

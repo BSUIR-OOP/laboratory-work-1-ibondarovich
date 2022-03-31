@@ -8,18 +8,49 @@ namespace ConsoleApp1
 {
     class Point
     { 
-        protected double x;
-        protected double y;
+        private double x;
+        private double y;
 
+
+        protected Point()
+        {
+
+        }
         public Point(double x, double y)
         {
-            this.x = x;
-            this.y = y;
+            X = x;
+            Y = y;
+        }
+
+        public double X
+        {
+            get
+            {
+                return x;
+            }
+
+            set
+            {
+                this.x = value;
+            }
+        }
+
+        public double Y
+        {
+             get
+            {
+                return y;
+            }
+
+            set
+            {
+                this.y = value;
+            }
         }
 
         public virtual void ShowFigure()
         {
-            Console.WriteLine("Точка с координатами ({0};{1})",x,y);
+            Console.WriteLine("Точка с координатами ({0};{1})",X,Y);
         }
     }
 }

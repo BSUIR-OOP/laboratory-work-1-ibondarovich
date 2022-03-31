@@ -8,20 +8,17 @@ namespace ConsoleApp1
 {
     class Line: Point
     {
-
-        private double width;
-        private double height;
-        
-        public Line(double x, double y, double width, double height):base(x,y)
+        private Point point1;
+        private Point point2;
+        public Line(double x1, double y1, double x2, double y2)
         {
-            this.width = x + width;
-            this.height = y + height;
+            point1 = new Point(x1,y1);
+            point2 = new Point(x2,y2);
         }
+        
         public override void ShowFigure()
         {
-            Console.WriteLine("Отрезок с координатами ({0},{1}) и ({2},{3})",x,y,width,height);
+            Console.WriteLine("Отрезок с координатами ({0},{1}) и ({2},{3})",point1.X,point1.Y,point2.X,point2.Y);
         }
-
-
     }
 }
